@@ -11,6 +11,9 @@
   font-weight: 400;
 }
 
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   margin: 0;
@@ -32,6 +35,23 @@ body {
 }
 .header {
   grid-area: 1/2/1/3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.header-searchbar {
+  background-color: grey;
+}
+.header-profile {
+  background-color: wheat;
+}
+.header-greeting {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.header-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .main-content {
   background-color: rgb(228, 231, 239);
