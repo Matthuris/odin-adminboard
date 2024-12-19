@@ -57,10 +57,22 @@ body {
   grid-template-rows: 1fr 1fr;
 }
 .header-searchbar {
-  background-color: grey;
+  display: grid;
+  justify-items: end;
+  align-items: center;
+}
+.header-searchbar input {
+  background-color: rgb(228, 231, 239);
+  border: none;
+  border-radius: 30px;
+  width: 90%;
+  height: 40%;
 }
 .header-profile {
-  background-color: wheat;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
 }
 .header-greeting {
   display: grid;
@@ -70,6 +82,17 @@ body {
 .header-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 0 10%;
+}
+.header-buttons button {
+  background-color: rgb(25, 146, 212);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  width: 90%;
+  padding: 6% 12%;
 }
 .main-content {
   background-color: rgb(228, 231, 239);
