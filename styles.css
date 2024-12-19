@@ -67,6 +67,8 @@ body {
   border-radius: 30px;
   width: 90%;
   height: 40%;
+  font-size: large;
+  text-indent: 2%;
 }
 .header-profile {
   display: grid;
