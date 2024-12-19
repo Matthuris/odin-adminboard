@@ -23,6 +23,13 @@ h6,
 p {
   margin: 0%;
 }
+
+p {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: rgb(111, 111, 111);
+}
+
 html,
 body {
   margin: 0;
@@ -90,6 +97,15 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3fr 1fr;
+  padding: 0px 30px;
+}
+.project-text {
+  grid-column: span 2;
+  align-self: center;
+}
+.project-buttons {
+  grid-area: 2/2/3/3;
+  justify-self: end;
 }
 .project .announcements {
   grid-area: 1/2/2/3;
