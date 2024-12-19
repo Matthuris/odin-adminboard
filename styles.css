@@ -89,10 +89,9 @@ body {
   border-left: 10px solid rgb(231, 182, 74);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
 }
-
-.announcements {
+.project .announcements {
   grid-area: 1/2/2/3;
 }
 .trending {
