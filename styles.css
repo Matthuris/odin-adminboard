@@ -82,6 +82,7 @@ body {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: space-around;
+  overflow: hidden;
 }
 .header img {
   height: 30%;
@@ -112,15 +113,38 @@ body {
 .header-profile div {
   display: grid;
   height: 100%;
-
   align-items: center;
 }
+.header-profile .profile-background {
+  max-height: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
 .notifcation-bell {
   height: 50%;
 }
 .header-greeting {
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 1fr 4fr;
+}
+
+.profile-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 182, 74);
+  border-radius: 50%;
+  justify-self: center;
+  height: 50%;
+  /* aspect-ratio: 1; */
+}
+.profile-picture {
+  min-width: 75%;
+  min-height: 75%;
+  max-width: 75%;
+  max-height: 75%;
+  /* aspect-ratio: 1; */
 }
 
 .header-buttons {
@@ -129,6 +153,7 @@ body {
   align-items: center;
   justify-items: center;
   padding: 0 10%;
+  height: 50%;
 }
 .header-buttons button {
   background-color: rgb(25, 146, 212);
