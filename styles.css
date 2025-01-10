@@ -158,6 +158,13 @@ body {
 .project-buttons {
   grid-area: 2/2/3/3;
   justify-self: end;
+  justify-content: space-between;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.project-buttons img {
+  width: 40%;
 }
 .project .announcements {
   grid-area: 1/2/2/3;
