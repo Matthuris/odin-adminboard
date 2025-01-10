@@ -81,11 +81,16 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
+  justify-content: space-around;
+}
+.header img {
+  height: 30%;
+  justify-self: end;
 }
 .header-searchbar {
-  grid-template-columns: 1fr 9fr;
+  grid-template-columns: 1fr 8fr;
   display: grid;
-  justify-items: end;
+
   align-items: center;
 }
 .header-searchbar input {
@@ -96,12 +101,22 @@ body {
   height: 40%;
   font-size: large;
   text-indent: 2%;
+  justify-self: start;
 }
 .header-profile {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
+}
+.header-profile div {
+  display: grid;
+  height: 100%;
+
+  align-items: center;
+}
+.notifcation-bell {
+  height: 50%;
 }
 .header-greeting {
   display: grid;
